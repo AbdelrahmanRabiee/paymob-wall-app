@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container">
+<br> <br> <br>
+<div class="row">
+  <form method="post" id="signup-form">
+    {% csrf_token %}
+    <div id="error">
+    <label>
+    <p class="label-txt" id="error-label" style="color: red;"></p>
+    <input type="text" class="input" disabled  >
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+   </div>
+
+
+    <label>
+    <p class="label-txt">ENTER YOUR FIRST NAME</p>
+    <input type="text" class="input" name="first_name">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+
+    <label>
+    <p class="label-txt">ENTER YOUR LAST NAME</p>
+    <input type="text" class="input" name="last_name">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+
+  <label>
+    <p class="label-txt">ENTER YOUR EMAIL</p>
+    <input type="email" class="input" name="email">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+
+  <label>
+    <p class="label-txt">ENTER YOUR PASSWORD</p>
+    <input type="password" class="input" name="password">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <button type="submit">submit</button>
+</form>
+
+</div>
+
+</div>
+
+
+{% endblock %}

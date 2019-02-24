@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block body %}
+{#<div class="container">#}
+{#<br>#}
+{#<a href="">Home</a>#}
+{#<div class="row" id="profile">#}
+
+
+  <!-- Material form contact -->
+<div class="card">
+
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Add New Post</strong>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+<a href="{% url "blog:timeline" %}">Home</a>
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" method="post" id="post-form">
+            <!--Message-->
+            <div class="md-form">
+                <textarea type="text" name="content" id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+                <label for="materialContactFormMessage">say something ..</label>
+            </div>
+
+
+
+            <!-- Send button -->
+            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
+
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>
+<!-- Material form contact -->
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
